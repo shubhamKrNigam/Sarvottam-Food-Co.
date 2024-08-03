@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart -- Sarvottam Food & Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Images/BLK4.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="account.html">Account</a></li>                
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px"></a>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+ 
+
+
+<!-------cart items details-------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Products</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/product-12 - Copy.jpg" >
+                    <div>
+                        <p>Orange Flavoured Muffin</p>
+                        <small>Price: ₹50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/product-7 - Copy.jpeg" >
+                    <div>
+                        <p>Celebration Sweet Pack</p>
+                        <small>Price: ₹350.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹350.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="Images/product-11 - Copy.jpg" >
+                    <div>
+                        <p>Chocolate Rush</p>
+                        <small>Price: ₹250.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹250.00</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹650.00</td>
+
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹40.00</td>
+
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹690.00</td>
+
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+
+</div>
+
+<!----------Footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios.</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png">
+                        <img src="Images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/g68.png" >
+                    <p>Our Purpose Is To Susrainably  Make & Serve The Goodies.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Sarvottam Food & Co.</p>
+        </div>
+    </div>
+<!------js for toggle menu------->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+
+</body>
+</html>
